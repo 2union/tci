@@ -2,7 +2,8 @@ name: Publish
 
 on:
   push:
-    tags: [ ** ]
+    tags:
+    - '**'
 
 env:
   VEKTONN_PYTHON_PACKAGE_VERSION: ${{ github.ref_name }}
