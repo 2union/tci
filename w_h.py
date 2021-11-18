@@ -1,4 +1,3 @@
 import os
 
-for k, v in os.environ.items():
-    print(f'{k}={v}')
+print("My realease version", os.environ.get('GITHUB_REF_NAME'))
